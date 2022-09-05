@@ -20,7 +20,7 @@ oc/pcmcdc.zip.
 
 As instâncias seguem o seguinte formato:
 
-n
+n <br>
 v_1 v_2 ... v_n
 v_12 v_13 ... v_1n
 v_23 v_24 ... v_2n
