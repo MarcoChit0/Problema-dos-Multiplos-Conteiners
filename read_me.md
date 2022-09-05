@@ -32,6 +32,6 @@ v_n -1, <br>
 na <br>
 V_1 V_2 ... V_n <br>
 
-onde “na” pode ser ignorado. 
+onde “na” pode ser ignorado 
 
 O valor m = 10 é fixo, e os volumes Ck = floor ( 0.8/m * sum Vi for i = 1, ..., n), for k = 1, ..., m.
