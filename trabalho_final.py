@@ -11,13 +11,12 @@ num_conteiners = 10 #fixo -- de acordo com o enunciado
 def main():
     for n in range(num_instancias):
         # recupera os dados dos arquivos de entrada
-        itens, valores, pares, volumes, conteiners = read_file("pcmcdc" + str(n+1) + ".txt")
+        file_name = "pcmcdc" + str(n+1) + ".txt"
+        itens, valores, pares, volumes, conteiners = read_file(file_name)
         # monta e executa o programa inteiro
-        mult_conteiners(itens, volumes, valores, pares, conteiners, "out_pcmcdc" + str(n+1) + ".txt")
+        mult_conteiners(itens, volumes, valores, pares, conteiners, file_name)
 
-
-
-def mult_conteiners(num_itens, volumes, valores_itens, valores_pares, conteiners, out_file_name): 
+def mult_conteiners(num_itens, volumes, valores_itens, valores_pares, conteiners, file_name): 
     """
         Objetivo: monta e executa o programa inteiro.
         num_itens: int --> quantos itens tem no problema.
@@ -27,6 +26,9 @@ def mult_conteiners(num_itens, volumes, valores_itens, valores_pares, conteiners
         conteiners: list<int> --> conteiners[k] = volume do contêiner k.
         out_file_name: string --> nome do arquivo de saída (onde escreveremos os dados do problema).
     """
+    out_pref = "./out/out_"
+    form_pref = "./form/LP_out_"
+
     # construção do modelo
     model = LpProblem("Mult Conteiners", LpMaximize)
 
@@ -47,7 +49,7 @@ def mult_conteiners(num_itens, volumes, valores_itens, valores_pares, conteiners
     )
     
     # soma dos valores dos itens selecionados 
-    parte1 = lpSum(atribuicao[i, k] * valores_itens[i] for i in range(num_itens) for k in range(len(conteiners))) 
+    parte1 = lpSum((atribuicao[i, k] * valores_itens[i]) for i in range(num_itens) for k in range(len(conteiners))) 
     # soma dos valores dos pares de itens no mesmo contêiner
     parte2 = lpSum(par_atribuido_ao_mesmo_conteiner[i, j, k] * (valores_pares[i][j]/2) for i in range(num_itens) for j in range(num_itens) for k in range(len(conteiners)))
     # max valor
@@ -79,7 +81,7 @@ def mult_conteiners(num_itens, volumes, valores_itens, valores_pares, conteiners
     model.solve(solver)
 
     # escrever valor das variáveis e da função objetivo no arquivo de saída
-    file = open(out_file_name, "w")
+    file = open(out_pref + file_name, "w")
     for variable in model.variables():
         file.write(variable.name + " = " + str(variable.varValue) + "\n")
     file.write('model.objective: ' + str(value(model.objective)) + '\n')
@@ -87,7 +89,7 @@ def mult_conteiners(num_itens, volumes, valores_itens, valores_pares, conteiners
     file.close()
 
     # escrever formulação no arquivo de formulação
-    model.writeLP("LP_"+out_file_name)
+    model.writeLP(form_pref + file_name)
 
 
 
@@ -96,7 +98,8 @@ def read_file(file_name):
         Objetivo: ler o arquivo de instâncias e salvar os dados do problema.
         file_name: string --> nome do arquivo de entrada.
     """
-    f = open(file_name)
+    input_dir = "./in/"
+    f = open(input_dir + file_name)
     itens = 0
     counter = 0
     valor_itens = []

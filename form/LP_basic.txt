@@ -1,0 +1,545 @@
+\* Mult_Conteiners *\
+Maximize
+fo: atribuicao_(0,_0) + atribuicao_(0,_1) + atribuicao_(0,_2)
+ + atribuicao_(0,_3) + atribuicao_(0,_4) + atribuicao_(0,_5)
+ + atribuicao_(0,_6) + atribuicao_(0,_7) + atribuicao_(0,_8)
+ + atribuicao_(0,_9) + 2 atribuicao_(1,_0) + 2 atribuicao_(1,_1)
+ + 2 atribuicao_(1,_2) + 2 atribuicao_(1,_3) + 2 atribuicao_(1,_4)
+ + 2 atribuicao_(1,_5) + 2 atribuicao_(1,_6) + 2 atribuicao_(1,_7)
+ + 2 atribuicao_(1,_8) + 2 atribuicao_(1,_9) + 3 atribuicao_(2,_0)
+ + 3 atribuicao_(2,_1) + 3 atribuicao_(2,_2) + 3 atribuicao_(2,_3)
+ + 3 atribuicao_(2,_4) + 3 atribuicao_(2,_5) + 3 atribuicao_(2,_6)
+ + 3 atribuicao_(2,_7) + 3 atribuicao_(2,_8) + 3 atribuicao_(2,_9)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_0)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_1)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_2)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_3)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_4)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_5)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_6)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_7)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_8)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(0,_1,_9)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_0)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_1)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_2)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_3)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_4)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_5)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_6)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_7)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_8)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_9)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_0)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_1)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_2)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_3)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_4)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_5)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_6)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_7)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_8)
+ + 1.5 par_atribuido_ao_mesmo_conteiner_(1,_0,_9)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_0)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_1)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_2)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_3)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_4)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_5)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_6)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_7)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_8)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(1,_2,_9)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_0)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_1)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_2)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_3)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_4)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_5)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_6)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_7)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_8)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_9)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_0)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_1)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_2)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_3)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_4)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_5)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_6)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_7)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_8)
+ + 2.5 par_atribuido_ao_mesmo_conteiner_(2,_1,_9)
+Subject To
+_C1: - 2 atribuicao_(0,_0) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_0) <= 0
+_C10: 2 atribuicao_(1,_0) - par_atribuido_ao_mesmo_conteiner_(1,_1,_0) <= 1
+_C100: 2 atribuicao_(1,_5) - par_atribuido_ao_mesmo_conteiner_(1,_1,_5) <= 1
+_C101: - atribuicao_(1,_5) - atribuicao_(2,_5)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_5) <= 0
+_C102: atribuicao_(1,_5) + atribuicao_(2,_5)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_5) <= 1
+_C103: - atribuicao_(0,_5) - atribuicao_(2,_5)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_5) <= 0
+_C104: atribuicao_(0,_5) + atribuicao_(2,_5)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_5) <= 1
+_C105: - atribuicao_(1,_5) - atribuicao_(2,_5)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_5) <= 0
+_C106: atribuicao_(1,_5) + atribuicao_(2,_5)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_5) <= 1
+_C107: - 2 atribuicao_(2,_5) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_5)
+ <= 0
+_C108: 2 atribuicao_(2,_5) - par_atribuido_ao_mesmo_conteiner_(2,_2,_5) <= 1
+_C109: - 2 atribuicao_(0,_6) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_6)
+ <= 0
+_C11: - atribuicao_(1,_0) - atribuicao_(2,_0)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_0) <= 0
+_C110: 2 atribuicao_(0,_6) - par_atribuido_ao_mesmo_conteiner_(0,_0,_6) <= 1
+_C111: - atribuicao_(0,_6) - atribuicao_(1,_6)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_6) <= 0
+_C112: atribuicao_(0,_6) + atribuicao_(1,_6)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_6) <= 1
+_C113: - atribuicao_(0,_6) - atribuicao_(2,_6)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_6) <= 0
+_C114: atribuicao_(0,_6) + atribuicao_(2,_6)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_6) <= 1
+_C115: - atribuicao_(0,_6) - atribuicao_(1,_6)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_6) <= 0
+_C116: atribuicao_(0,_6) + atribuicao_(1,_6)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_6) <= 1
+_C117: - 2 atribuicao_(1,_6) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_6)
+ <= 0
+_C118: 2 atribuicao_(1,_6) - par_atribuido_ao_mesmo_conteiner_(1,_1,_6) <= 1
+_C119: - atribuicao_(1,_6) - atribuicao_(2,_6)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_6) <= 0
+_C12: atribuicao_(1,_0) + atribuicao_(2,_0)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_0) <= 1
+_C120: atribuicao_(1,_6) + atribuicao_(2,_6)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_6) <= 1
+_C121: - atribuicao_(0,_6) - atribuicao_(2,_6)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_6) <= 0
+_C122: atribuicao_(0,_6) + atribuicao_(2,_6)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_6) <= 1
+_C123: - atribuicao_(1,_6) - atribuicao_(2,_6)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_6) <= 0
+_C124: atribuicao_(1,_6) + atribuicao_(2,_6)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_6) <= 1
+_C125: - 2 atribuicao_(2,_6) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_6)
+ <= 0
+_C126: 2 atribuicao_(2,_6) - par_atribuido_ao_mesmo_conteiner_(2,_2,_6) <= 1
+_C127: - 2 atribuicao_(0,_7) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_7)
+ <= 0
+_C128: 2 atribuicao_(0,_7) - par_atribuido_ao_mesmo_conteiner_(0,_0,_7) <= 1
+_C129: - atribuicao_(0,_7) - atribuicao_(1,_7)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_7) <= 0
+_C13: - atribuicao_(0,_0) - atribuicao_(2,_0)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_0) <= 0
+_C130: atribuicao_(0,_7) + atribuicao_(1,_7)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_7) <= 1
+_C131: - atribuicao_(0,_7) - atribuicao_(2,_7)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_7) <= 0
+_C132: atribuicao_(0,_7) + atribuicao_(2,_7)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_7) <= 1
+_C133: - atribuicao_(0,_7) - atribuicao_(1,_7)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_7) <= 0
+_C134: atribuicao_(0,_7) + atribuicao_(1,_7)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_7) <= 1
+_C135: - 2 atribuicao_(1,_7) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_7)
+ <= 0
+_C136: 2 atribuicao_(1,_7) - par_atribuido_ao_mesmo_conteiner_(1,_1,_7) <= 1
+_C137: - atribuicao_(1,_7) - atribuicao_(2,_7)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_7) <= 0
+_C138: atribuicao_(1,_7) + atribuicao_(2,_7)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_7) <= 1
+_C139: - atribuicao_(0,_7) - atribuicao_(2,_7)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_7) <= 0
+_C14: atribuicao_(0,_0) + atribuicao_(2,_0)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_0) <= 1
+_C140: atribuicao_(0,_7) + atribuicao_(2,_7)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_7) <= 1
+_C141: - atribuicao_(1,_7) - atribuicao_(2,_7)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_7) <= 0
+_C142: atribuicao_(1,_7) + atribuicao_(2,_7)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_7) <= 1
+_C143: - 2 atribuicao_(2,_7) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_7)
+ <= 0
+_C144: 2 atribuicao_(2,_7) - par_atribuido_ao_mesmo_conteiner_(2,_2,_7) <= 1
+_C145: - 2 atribuicao_(0,_8) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_8)
+ <= 0
+_C146: 2 atribuicao_(0,_8) - par_atribuido_ao_mesmo_conteiner_(0,_0,_8) <= 1
+_C147: - atribuicao_(0,_8) - atribuicao_(1,_8)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_8) <= 0
+_C148: atribuicao_(0,_8) + atribuicao_(1,_8)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_8) <= 1
+_C149: - atribuicao_(0,_8) - atribuicao_(2,_8)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_8) <= 0
+_C15: - atribuicao_(1,_0) - atribuicao_(2,_0)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_0) <= 0
+_C150: atribuicao_(0,_8) + atribuicao_(2,_8)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_8) <= 1
+_C151: - atribuicao_(0,_8) - atribuicao_(1,_8)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_8) <= 0
+_C152: atribuicao_(0,_8) + atribuicao_(1,_8)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_8) <= 1
+_C153: - 2 atribuicao_(1,_8) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_8)
+ <= 0
+_C154: 2 atribuicao_(1,_8) - par_atribuido_ao_mesmo_conteiner_(1,_1,_8) <= 1
+_C155: - atribuicao_(1,_8) - atribuicao_(2,_8)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_8) <= 0
+_C156: atribuicao_(1,_8) + atribuicao_(2,_8)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_8) <= 1
+_C157: - atribuicao_(0,_8) - atribuicao_(2,_8)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_8) <= 0
+_C158: atribuicao_(0,_8) + atribuicao_(2,_8)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_8) <= 1
+_C159: - atribuicao_(1,_8) - atribuicao_(2,_8)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_8) <= 0
+_C16: atribuicao_(1,_0) + atribuicao_(2,_0)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_0) <= 1
+_C160: atribuicao_(1,_8) + atribuicao_(2,_8)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_8) <= 1
+_C161: - 2 atribuicao_(2,_8) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_8)
+ <= 0
+_C162: 2 atribuicao_(2,_8) - par_atribuido_ao_mesmo_conteiner_(2,_2,_8) <= 1
+_C163: - 2 atribuicao_(0,_9) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_9)
+ <= 0
+_C164: 2 atribuicao_(0,_9) - par_atribuido_ao_mesmo_conteiner_(0,_0,_9) <= 1
+_C165: - atribuicao_(0,_9) - atribuicao_(1,_9)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_9) <= 0
+_C166: atribuicao_(0,_9) + atribuicao_(1,_9)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_9) <= 1
+_C167: - atribuicao_(0,_9) - atribuicao_(2,_9)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_9) <= 0
+_C168: atribuicao_(0,_9) + atribuicao_(2,_9)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_9) <= 1
+_C169: - atribuicao_(0,_9) - atribuicao_(1,_9)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_9) <= 0
+_C17: - 2 atribuicao_(2,_0) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_0)
+ <= 0
+_C170: atribuicao_(0,_9) + atribuicao_(1,_9)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_9) <= 1
+_C171: - 2 atribuicao_(1,_9) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_9)
+ <= 0
+_C172: 2 atribuicao_(1,_9) - par_atribuido_ao_mesmo_conteiner_(1,_1,_9) <= 1
+_C173: - atribuicao_(1,_9) - atribuicao_(2,_9)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_9) <= 0
+_C174: atribuicao_(1,_9) + atribuicao_(2,_9)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_9) <= 1
+_C175: - atribuicao_(0,_9) - atribuicao_(2,_9)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_9) <= 0
+_C176: atribuicao_(0,_9) + atribuicao_(2,_9)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_9) <= 1
+_C177: - atribuicao_(1,_9) - atribuicao_(2,_9)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_9) <= 0
+_C178: atribuicao_(1,_9) + atribuicao_(2,_9)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_9) <= 1
+_C179: - 2 atribuicao_(2,_9) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_9)
+ <= 0
+_C18: 2 atribuicao_(2,_0) - par_atribuido_ao_mesmo_conteiner_(2,_2,_0) <= 1
+_C180: 2 atribuicao_(2,_9) - par_atribuido_ao_mesmo_conteiner_(2,_2,_9) <= 1
+_C181: atribuicao_(0,_0) + atribuicao_(0,_1) + atribuicao_(0,_2)
+ + atribuicao_(0,_3) + atribuicao_(0,_4) + atribuicao_(0,_5)
+ + atribuicao_(0,_6) + atribuicao_(0,_7) + atribuicao_(0,_8)
+ + atribuicao_(0,_9) <= 1
+_C182: atribuicao_(1,_0) + atribuicao_(1,_1) + atribuicao_(1,_2)
+ + atribuicao_(1,_3) + atribuicao_(1,_4) + atribuicao_(1,_5)
+ + atribuicao_(1,_6) + atribuicao_(1,_7) + atribuicao_(1,_8)
+ + atribuicao_(1,_9) <= 1
+_C183: atribuicao_(2,_0) + atribuicao_(2,_1) + atribuicao_(2,_2)
+ + atribuicao_(2,_3) + atribuicao_(2,_4) + atribuicao_(2,_5)
+ + atribuicao_(2,_6) + atribuicao_(2,_7) + atribuicao_(2,_8)
+ + atribuicao_(2,_9) <= 1
+_C184: atribuicao_(0,_0) + atribuicao_(1,_0) + atribuicao_(2,_0) <= 0
+_C185: atribuicao_(0,_1) + atribuicao_(1,_1) + atribuicao_(2,_1) <= 0
+_C186: atribuicao_(0,_2) + atribuicao_(1,_2) + atribuicao_(2,_2) <= 0
+_C187: atribuicao_(0,_3) + atribuicao_(1,_3) + atribuicao_(2,_3) <= 0
+_C188: atribuicao_(0,_4) + atribuicao_(1,_4) + atribuicao_(2,_4) <= 0
+_C189: atribuicao_(0,_5) + atribuicao_(1,_5) + atribuicao_(2,_5) <= 0
+_C19: - 2 atribuicao_(0,_1) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_1)
+ <= 0
+_C190: atribuicao_(0,_6) + atribuicao_(1,_6) + atribuicao_(2,_6) <= 0
+_C191: atribuicao_(0,_7) + atribuicao_(1,_7) + atribuicao_(2,_7) <= 0
+_C192: atribuicao_(0,_8) + atribuicao_(1,_8) + atribuicao_(2,_8) <= 0
+_C193: atribuicao_(0,_9) + atribuicao_(1,_9) + atribuicao_(2,_9) <= 0
+_C2: 2 atribuicao_(0,_0) - par_atribuido_ao_mesmo_conteiner_(0,_0,_0) <= 1
+_C20: 2 atribuicao_(0,_1) - par_atribuido_ao_mesmo_conteiner_(0,_0,_1) <= 1
+_C21: - atribuicao_(0,_1) - atribuicao_(1,_1)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_1) <= 0
+_C22: atribuicao_(0,_1) + atribuicao_(1,_1)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_1) <= 1
+_C23: - atribuicao_(0,_1) - atribuicao_(2,_1)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_1) <= 0
+_C24: atribuicao_(0,_1) + atribuicao_(2,_1)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_1) <= 1
+_C25: - atribuicao_(0,_1) - atribuicao_(1,_1)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_1) <= 0
+_C26: atribuicao_(0,_1) + atribuicao_(1,_1)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_1) <= 1
+_C27: - 2 atribuicao_(1,_1) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_1)
+ <= 0
+_C28: 2 atribuicao_(1,_1) - par_atribuido_ao_mesmo_conteiner_(1,_1,_1) <= 1
+_C29: - atribuicao_(1,_1) - atribuicao_(2,_1)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_1) <= 0
+_C3: - atribuicao_(0,_0) - atribuicao_(1,_0)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_0) <= 0
+_C30: atribuicao_(1,_1) + atribuicao_(2,_1)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_1) <= 1
+_C31: - atribuicao_(0,_1) - atribuicao_(2,_1)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_1) <= 0
+_C32: atribuicao_(0,_1) + atribuicao_(2,_1)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_1) <= 1
+_C33: - atribuicao_(1,_1) - atribuicao_(2,_1)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_1) <= 0
+_C34: atribuicao_(1,_1) + atribuicao_(2,_1)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_1) <= 1
+_C35: - 2 atribuicao_(2,_1) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_1)
+ <= 0
+_C36: 2 atribuicao_(2,_1) - par_atribuido_ao_mesmo_conteiner_(2,_2,_1) <= 1
+_C37: - 2 atribuicao_(0,_2) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_2)
+ <= 0
+_C38: 2 atribuicao_(0,_2) - par_atribuido_ao_mesmo_conteiner_(0,_0,_2) <= 1
+_C39: - atribuicao_(0,_2) - atribuicao_(1,_2)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_2) <= 0
+_C4: atribuicao_(0,_0) + atribuicao_(1,_0)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_0) <= 1
+_C40: atribuicao_(0,_2) + atribuicao_(1,_2)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_2) <= 1
+_C41: - atribuicao_(0,_2) - atribuicao_(2,_2)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_2) <= 0
+_C42: atribuicao_(0,_2) + atribuicao_(2,_2)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_2) <= 1
+_C43: - atribuicao_(0,_2) - atribuicao_(1,_2)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_2) <= 0
+_C44: atribuicao_(0,_2) + atribuicao_(1,_2)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_2) <= 1
+_C45: - 2 atribuicao_(1,_2) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_2)
+ <= 0
+_C46: 2 atribuicao_(1,_2) - par_atribuido_ao_mesmo_conteiner_(1,_1,_2) <= 1
+_C47: - atribuicao_(1,_2) - atribuicao_(2,_2)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_2) <= 0
+_C48: atribuicao_(1,_2) + atribuicao_(2,_2)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_2) <= 1
+_C49: - atribuicao_(0,_2) - atribuicao_(2,_2)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_2) <= 0
+_C5: - atribuicao_(0,_0) - atribuicao_(2,_0)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_0) <= 0
+_C50: atribuicao_(0,_2) + atribuicao_(2,_2)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_2) <= 1
+_C51: - atribuicao_(1,_2) - atribuicao_(2,_2)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_2) <= 0
+_C52: atribuicao_(1,_2) + atribuicao_(2,_2)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_2) <= 1
+_C53: - 2 atribuicao_(2,_2) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_2)
+ <= 0
+_C54: 2 atribuicao_(2,_2) - par_atribuido_ao_mesmo_conteiner_(2,_2,_2) <= 1
+_C55: - 2 atribuicao_(0,_3) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_3)
+ <= 0
+_C56: 2 atribuicao_(0,_3) - par_atribuido_ao_mesmo_conteiner_(0,_0,_3) <= 1
+_C57: - atribuicao_(0,_3) - atribuicao_(1,_3)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_3) <= 0
+_C58: atribuicao_(0,_3) + atribuicao_(1,_3)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_3) <= 1
+_C59: - atribuicao_(0,_3) - atribuicao_(2,_3)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_3) <= 0
+_C6: atribuicao_(0,_0) + atribuicao_(2,_0)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_0) <= 1
+_C60: atribuicao_(0,_3) + atribuicao_(2,_3)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_3) <= 1
+_C61: - atribuicao_(0,_3) - atribuicao_(1,_3)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_3) <= 0
+_C62: atribuicao_(0,_3) + atribuicao_(1,_3)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_3) <= 1
+_C63: - 2 atribuicao_(1,_3) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_3)
+ <= 0
+_C64: 2 atribuicao_(1,_3) - par_atribuido_ao_mesmo_conteiner_(1,_1,_3) <= 1
+_C65: - atribuicao_(1,_3) - atribuicao_(2,_3)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_3) <= 0
+_C66: atribuicao_(1,_3) + atribuicao_(2,_3)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_3) <= 1
+_C67: - atribuicao_(0,_3) - atribuicao_(2,_3)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_3) <= 0
+_C68: atribuicao_(0,_3) + atribuicao_(2,_3)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_3) <= 1
+_C69: - atribuicao_(1,_3) - atribuicao_(2,_3)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_3) <= 0
+_C7: - atribuicao_(0,_0) - atribuicao_(1,_0)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_0) <= 0
+_C70: atribuicao_(1,_3) + atribuicao_(2,_3)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_3) <= 1
+_C71: - 2 atribuicao_(2,_3) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_3)
+ <= 0
+_C72: 2 atribuicao_(2,_3) - par_atribuido_ao_mesmo_conteiner_(2,_2,_3) <= 1
+_C73: - 2 atribuicao_(0,_4) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_4)
+ <= 0
+_C74: 2 atribuicao_(0,_4) - par_atribuido_ao_mesmo_conteiner_(0,_0,_4) <= 1
+_C75: - atribuicao_(0,_4) - atribuicao_(1,_4)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_4) <= 0
+_C76: atribuicao_(0,_4) + atribuicao_(1,_4)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_4) <= 1
+_C77: - atribuicao_(0,_4) - atribuicao_(2,_4)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_4) <= 0
+_C78: atribuicao_(0,_4) + atribuicao_(2,_4)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_4) <= 1
+_C79: - atribuicao_(0,_4) - atribuicao_(1,_4)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_4) <= 0
+_C8: atribuicao_(0,_0) + atribuicao_(1,_0)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_0) <= 1
+_C80: atribuicao_(0,_4) + atribuicao_(1,_4)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_4) <= 1
+_C81: - 2 atribuicao_(1,_4) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_4)
+ <= 0
+_C82: 2 atribuicao_(1,_4) - par_atribuido_ao_mesmo_conteiner_(1,_1,_4) <= 1
+_C83: - atribuicao_(1,_4) - atribuicao_(2,_4)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_1,_4) <= 0
+_C84: atribuicao_(1,_4) + atribuicao_(2,_4)
+ - par_atribuido_ao_mesmo_conteiner_(2,_1,_4) <= 1
+_C85: - atribuicao_(0,_4) - atribuicao_(2,_4)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_2,_4) <= 0
+_C86: atribuicao_(0,_4) + atribuicao_(2,_4)
+ - par_atribuido_ao_mesmo_conteiner_(0,_2,_4) <= 1
+_C87: - atribuicao_(1,_4) - atribuicao_(2,_4)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_2,_4) <= 0
+_C88: atribuicao_(1,_4) + atribuicao_(2,_4)
+ - par_atribuido_ao_mesmo_conteiner_(1,_2,_4) <= 1
+_C89: - 2 atribuicao_(2,_4) + 2 par_atribuido_ao_mesmo_conteiner_(2,_2,_4)
+ <= 0
+_C9: - 2 atribuicao_(1,_0) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_0) <= 0
+_C90: 2 atribuicao_(2,_4) - par_atribuido_ao_mesmo_conteiner_(2,_2,_4) <= 1
+_C91: - 2 atribuicao_(0,_5) + 2 par_atribuido_ao_mesmo_conteiner_(0,_0,_5)
+ <= 0
+_C92: 2 atribuicao_(0,_5) - par_atribuido_ao_mesmo_conteiner_(0,_0,_5) <= 1
+_C93: - atribuicao_(0,_5) - atribuicao_(1,_5)
+ + 2 par_atribuido_ao_mesmo_conteiner_(1,_0,_5) <= 0
+_C94: atribuicao_(0,_5) + atribuicao_(1,_5)
+ - par_atribuido_ao_mesmo_conteiner_(1,_0,_5) <= 1
+_C95: - atribuicao_(0,_5) - atribuicao_(2,_5)
+ + 2 par_atribuido_ao_mesmo_conteiner_(2,_0,_5) <= 0
+_C96: atribuicao_(0,_5) + atribuicao_(2,_5)
+ - par_atribuido_ao_mesmo_conteiner_(2,_0,_5) <= 1
+_C97: - atribuicao_(0,_5) - atribuicao_(1,_5)
+ + 2 par_atribuido_ao_mesmo_conteiner_(0,_1,_5) <= 0
+_C98: atribuicao_(0,_5) + atribuicao_(1,_5)
+ - par_atribuido_ao_mesmo_conteiner_(0,_1,_5) <= 1
+_C99: - 2 atribuicao_(1,_5) + 2 par_atribuido_ao_mesmo_conteiner_(1,_1,_5)
+ <= 0
+Binaries
+atribuicao_(0,_0)
+atribuicao_(0,_1)
+atribuicao_(0,_2)
+atribuicao_(0,_3)
+atribuicao_(0,_4)
+atribuicao_(0,_5)
+atribuicao_(0,_6)
+atribuicao_(0,_7)
+atribuicao_(0,_8)
+atribuicao_(0,_9)
+atribuicao_(1,_0)
+atribuicao_(1,_1)
+atribuicao_(1,_2)
+atribuicao_(1,_3)
+atribuicao_(1,_4)
+atribuicao_(1,_5)
+atribuicao_(1,_6)
+atribuicao_(1,_7)
+atribuicao_(1,_8)
+atribuicao_(1,_9)
+atribuicao_(2,_0)
+atribuicao_(2,_1)
+atribuicao_(2,_2)
+atribuicao_(2,_3)
+atribuicao_(2,_4)
+atribuicao_(2,_5)
+atribuicao_(2,_6)
+atribuicao_(2,_7)
+atribuicao_(2,_8)
+atribuicao_(2,_9)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_0)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_1)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_2)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_3)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_4)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_5)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_6)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_7)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_8)
+par_atribuido_ao_mesmo_conteiner_(0,_0,_9)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_0)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_1)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_2)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_3)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_4)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_5)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_6)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_7)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_8)
+par_atribuido_ao_mesmo_conteiner_(0,_1,_9)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_0)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_1)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_2)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_3)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_4)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_5)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_6)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_7)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_8)
+par_atribuido_ao_mesmo_conteiner_(0,_2,_9)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_0)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_1)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_2)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_3)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_4)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_5)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_6)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_7)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_8)
+par_atribuido_ao_mesmo_conteiner_(1,_0,_9)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_0)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_1)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_2)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_3)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_4)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_5)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_6)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_7)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_8)
+par_atribuido_ao_mesmo_conteiner_(1,_1,_9)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_0)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_1)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_2)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_3)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_4)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_5)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_6)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_7)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_8)
+par_atribuido_ao_mesmo_conteiner_(1,_2,_9)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_0)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_1)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_2)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_3)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_4)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_5)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_6)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_7)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_8)
+par_atribuido_ao_mesmo_conteiner_(2,_0,_9)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_0)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_1)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_2)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_3)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_4)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_5)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_6)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_7)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_8)
+par_atribuido_ao_mesmo_conteiner_(2,_1,_9)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_0)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_1)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_2)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_3)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_4)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_5)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_6)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_7)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_8)
+par_atribuido_ao_mesmo_conteiner_(2,_2,_9)
+End

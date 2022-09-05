@@ -35,3 +35,24 @@ V_1 V_2 ... V_n <br>
 onde “na” pode ser ignorado.
 
 O valor m = 10 é fixo, e os volumes Ck = floor ( 0.8/m * sum Vi for i = 1, ..., n), for k = 1, ..., m.
+
+<br>
+
+## Estrutura do projeto: ##
+### in ###
+Instâncias do problema.
+
+### out ### 
+Resultado dos experimentos. Valores das variáveis e da função objetivo.
+
+### form ### 
+Formulação matemática esecífica de cada uma das instâncias.
+
+### trabalho_final.py ### 
+Código em pyhton utilizando pulp como "FrontEnd" e CPLEX como "BackEnd".
+
+### formulacao_matematica.jpeg ###
+Imagem da formulação matemática do problema.
+
+### read_me.md ### 
+Arquivo de auxílio.
