@@ -56,3 +56,6 @@ Imagem da formulação matemática do problema.
 
 ### read_me.md ### 
 Arquivo de auxílio.
+
+### resultados.txt ###
+Arquivo comparando o resultado encontrado com o melhor valor conhecido para cada instância.

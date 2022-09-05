@@ -1,0 +1,19 @@
+Nome: Marco Chitolina.
+Cartão: 00308226.
+
+-- Resultados:
+
+-- 09/05/22 --
+-- solver: CPLEX -- 
+-- tempo: 4 horas por instância --
+instância XX:  (obtido/ esperado)
+instância 01:	6649/7992
+instância 02:	5585/5985
+instância 03:	6544/7604
+instância 04:	7222/8610
+instância 05:	6380/7132
+instância 06:	7922/8935
+instância 07:	8734/10984
+instância 08:	6972/8154
+instância 09:	8905/10385
+instância 10:	10095/11958
