@@ -21,16 +21,16 @@ oc/pcmcdc.zip.
 As instâncias seguem o seguinte formato:
 
 n <br>
-v_1 v_2 ... v_n
-v_12 v_13 ... v_1n
-v_23 v_24 ... v_2n
-v_34 v_35 ... v_3n
-...
-v_n -2,n-1,v_n -2,n
-v_n -1,n
-0
-na
-V_1 V_2 ... V_n
+v_1 v_2 ... v_n <br>
+v_12 v_13 ... v_1n <br>
+v_23 v_24 ... v_2n <br>
+v_34 v_35 ... v_3n <br>
+... <br>
+v_n -2,n-1,v_n -2,n <br>
+v_n -1, <br>
+0 <br>
+na <br>
+V_1 V_2 ... V_n <br>
 
 onde “na” pode ser ignorado. 
 
