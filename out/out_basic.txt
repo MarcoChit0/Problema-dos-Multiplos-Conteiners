@@ -1,0 +1,13 @@
+atribuicao_(0,_0) = 0.0
+atribuicao_(1,_0) = 1.0
+atribuicao_(2,_0) = 1.0
+par_atribuido_ao_mesmo_conteiner_(0,_0,_0) = 0.0
+par_atribuido_ao_mesmo_conteiner_(0,_1,_0) = 0.0
+par_atribuido_ao_mesmo_conteiner_(0,_2,_0) = 0.0
+par_atribuido_ao_mesmo_conteiner_(1,_0,_0) = 0.0
+par_atribuido_ao_mesmo_conteiner_(1,_1,_0) = 1.0
+par_atribuido_ao_mesmo_conteiner_(1,_2,_0) = 1.0
+par_atribuido_ao_mesmo_conteiner_(2,_0,_0) = 0.0
+par_atribuido_ao_mesmo_conteiner_(2,_1,_0) = 1.0
+par_atribuido_ao_mesmo_conteiner_(2,_2,_0) = 1.0
+Optimal value: 15.0
