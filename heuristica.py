@@ -14,7 +14,7 @@ from math import ceil, floor
 from numpy import *
 
 COUNT = 0
-NUM_EXECUCOES = 3
+NUM_EXECUCOES = 20
 
 def increment():
     global COUNT
@@ -62,9 +62,12 @@ def criterio_parada_satisfeito():
         return True
 
 def torneio(solucoes, num_participantes_torneio, valores_itens, valores_pares_itens, num_itens, num_conteiners):
-    participantes = random.choice(solucoes, size=num_participantes_torneio)
+    indice_solucoes_participantes = random.choice(len(solucoes), size=num_participantes_torneio)
+    participantes = []
+    for index in indice_solucoes_participantes:
+        participantes.append(deepcopy(solucoes[index]))
     melhores_participantes = sorted(participantes, key=lambda p: funcao_objetivo(p, valores_itens, valores_pares_itens, num_itens, num_conteiners))
-    return melhores_participantes[0], melhores_participantes[1]
+    return melhores_participantes
 
 def recombinacao(solucao_01, solucao_02, num_particao=1):
     for part in range(num_particao):
@@ -91,17 +94,13 @@ def busca_local(solucao):
 
 def selecao(populacao_original, nova_populacao, valores_itens, valores_pares_itens, num_itens, num_conteiners, num_solucoes_populacao_original, alpha=0.1, beta=0.9):
     # alpha = orinal + nova
-    pop_alpha = deepcopy(populacao_original)
-    pop_alpha.union(deepcopy(nova_populacao))
+    pop_alpha = deepcopy(populacao_original) + deepcopy(nova_populacao)
     pop_alpha = sorted(pop_alpha, key=lambda sol: funcao_objetivo(sol, valores_itens, valores_pares_itens, num_itens, num_conteiners))
     # beta = nova
     pop_beta = sorted(nova_populacao, key=lambda sol: funcao_objetivo(sol, valores_itens, valores_pares_itens, num_itens, num_conteiners))
     num_alpha_solucoes = ceil(alpha*num_solucoes_populacao_original)
     num_beta_solucoes = floor(beta*num_solucoes_populacao_original)
-    populacao_final = []
-    populacao_final.union(pop_alpha[0:num_alpha_solucoes])
-    populacao_final.union(pop_beta[0:num_beta_solucoes])
-    return populacao_final
+    return pop_alpha[0:int(num_alpha_solucoes)] + pop_beta[0:int(num_beta_solucoes)]
     
 
 
@@ -139,11 +138,12 @@ def heuristica(
     ):
     populacao_original = gera_solucoes(num_itens, num_conteiners, num_solucoes_populacao_original, pesos_conteiners, pesos_itens)
     while not criterio_parada_satisfeito():
-        nova_populacao = gera_solucoes(num_itens, num_conteiners, num_solucoes_nova_populacao)
-        sol_01, sol_02 = torneio(populacao_original, num_participantes_torneio, valores_itens, valores_pares_itens, num_itens, num_conteiners)
+        nova_populacao =  gera_solucoes(num_itens, num_conteiners, num_solucoes_nova_populacao, pesos_conteiners, pesos_itens)
+        melhores_participantes = torneio(populacao_original, num_participantes_torneio, valores_itens, valores_pares_itens, num_itens, num_conteiners)
+        sol_01, sol_02 = melhores_participantes[0], melhores_participantes[1]
         recombinacao(sol_01, sol_02, num_particao)
-        mutacao(sol_01)
-        mutacao(sol_02)
+        mutacao(sol_01, num_conteiners, num_itens, pesos_itens, pesos_conteiners)
+        mutacao(sol_02, num_conteiners, num_itens, pesos_itens, pesos_conteiners)
         # valor_sol_01 = busca_local(sol_01)
         # valor_sol_02 = busca_local(sol_02)
         nova_populacao = selecao(populacao_original, nova_populacao, valores_itens, valores_pares_itens, num_itens, num_conteiners, num_solucoes_populacao_original, alpha, beta)
@@ -157,6 +157,6 @@ def heuristica(
             nova_populacao.append(sol_02)
         populacao_original = deepcopy(nova_populacao)
     return populacao_original
-# print(heuristica(10, 2, 5, [10, 10], [3,4,5,6,7,2,2,2,4,5], 2, 4))
+print(heuristica(4, 2, 5, [3, 3], [1,2,3,4], 3, 4, [1,2,3,4],[[0,4,1,1],[4,0,1,1],[1,1,0,1],[1,1,1,0]]))
 # print(funcao_objetivo([[1,1,0,0],[0,0,1,0]], [1,2,3,4], [[0,4,1,1],[4,0,1,1],[1,1,0,1],[1,1,1,0]], 4, 2))
 
