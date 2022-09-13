@@ -75,8 +75,27 @@ def recombinacao(solucao_01, solucao_02, num_particao=1):
         # Evita, assim, ficar recalculando o peso para ver se passou ou não do peso máximo do conteiner.
         swap(solucao_01, solucao_02, part)
 
+def atualiza_variaveis(solucao, posic):
+    novas_variaveis = []
+    count = 0
+    for var in solucao[posic]:
+        if var == 1:
+            novas_variaveis.append(count)
+        count += 1
+
+    cont_posic = 0
+    for cont in solucao:
+        for var_index in novas_variaveis:
+            if (cont[var_index] == 1) and (cont_posic != posic):
+                cont[var_index] = 0
+        cont_posic +=1
+
+
 def swap(lista01, lista02, posic):
     lista01[posic], lista02[posic] = lista02[posic], lista01[posic]
+    atualiza_variaveis(lista01, posic)
+    atualiza_variaveis(lista02, posic)
+
 
 def mutacao(solucao, num_conteiners, num_itens, pesos_itens, pesos_conteiners):
     for conteiner in range(num_conteiners):
