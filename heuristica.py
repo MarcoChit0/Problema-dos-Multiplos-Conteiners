@@ -146,7 +146,6 @@ def heuristica(
     num_solucoes_populacao_original, 
     pesos_conteiners,
     pesos_itens,
-    num_solucoes_nova_populacao, 
     num_participantes_torneio, 
     valores_itens,
     valores_pares_itens, 
@@ -157,25 +156,23 @@ def heuristica(
     ):
     populacao_original = gera_solucoes(num_itens, num_conteiners, num_solucoes_populacao_original, pesos_conteiners, pesos_itens)
     while not criterio_parada_satisfeito():
-        nova_populacao =  gera_solucoes(num_itens, num_conteiners, num_solucoes_nova_populacao, pesos_conteiners, pesos_itens)
-        melhores_participantes = torneio(populacao_original, num_participantes_torneio, valores_itens, valores_pares_itens, num_itens, num_conteiners)
-        sol_01, sol_02 = melhores_participantes[0], melhores_participantes[1]
-        recombinacao(sol_01, sol_02, num_particao)
-        mutacao(sol_01, num_conteiners, num_itens, pesos_itens, pesos_conteiners)
-        mutacao(sol_02, num_conteiners, num_itens, pesos_itens, pesos_conteiners)
-        # valor_sol_01 = busca_local(sol_01)
-        # valor_sol_02 = busca_local(sol_02)
-        nova_populacao = selecao(populacao_original, nova_populacao, valores_itens, valores_pares_itens, num_itens, num_conteiners, num_solucoes_populacao_original, alpha, beta)
-        # if valor_sol_01 > valor_sol_02:
-        #     populacao_original.append(sol_01)
-        # else:
-        #     populacao_original.append(sol_02)
-        if funcao_objetivo(sol_01, valores_itens, valores_pares_itens, num_itens, num_conteiners) > funcao_objetivo(sol_02, valores_itens, valores_pares_itens, num_itens, num_conteiners):
+        #  TODO: gerar pop nova baseada na antiga
+        nova_populacao =  []
+        while len(nova_populacao) < len(populacao_original):
+            sol_01 = torneio(populacao_original, num_participantes_torneio, valores_itens, valores_pares_itens, num_itens, num_conteiners)[0]
+            sol_02 = torneio(populacao_original, num_participantes_torneio, valores_itens, valores_pares_itens, num_itens, num_conteiners)[0]
+            recombinacao(sol_01, sol_02, num_particao)
+            mutacao(sol_01, num_conteiners, num_itens, pesos_itens, pesos_conteiners)
+            mutacao(sol_02, num_conteiners, num_itens, pesos_itens, pesos_conteiners)
+            # melhoria:
+            # valor_sol_01 = busca_local(sol_01)
+            # valor_sol_02 = busca_local(sol_02)
             nova_populacao.append(sol_01)
-        else:
             nova_populacao.append(sol_02)
-        populacao_original = deepcopy(nova_populacao)
+        populacao_original = selecao(populacao_original, nova_populacao, valores_itens, valores_pares_itens, num_itens, num_conteiners, num_solucoes_populacao_original, alpha, beta)
     return populacao_original
-print(heuristica(4, 2, 5, [3, 3], [1,2,3,4], 3, 4, [1,2,3,4],[[0,4,1,1],[4,0,1,1],[1,1,0,1],[1,1,1,0]]))
+print(heuristica(4, 2, 5, [3, 3], [1,2,3,4], 3, 2, [1,2,3,4],[[0,4,1,1],[4,0,1,1],[1,1,0,1],[1,1,1,0]]))
 # print(funcao_objetivo([[1,1,0,0],[0,0,1,0]], [1,2,3,4], [[0,4,1,1],[4,0,1,1],[1,1,0,1],[1,1,1,0]], 4, 2))
 
+# TODO: para cada uma das 10 instâncias do problema dos contêiners: rodar o algoritmo 5 vezes, salvando os resultados, e realizar a média. 
+# OBS: para cada vez que eu for rodar o algoritmo, rodar para a mesma semente aleatória, isto é, seed in [1,2,3,4,5].
