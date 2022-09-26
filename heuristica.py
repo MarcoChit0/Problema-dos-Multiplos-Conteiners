@@ -16,7 +16,7 @@ from statistics import *
 import time
 from numpy import *
 
-TIME_LIMIT = 20  # 5 horas 
+TIME_LIMIT = 18000  # 5 horas 
 NUM_INSTANCIAS = 2  # 2 execuções
 NUM_CONTEINERS = 10 # fixo -- de acordo com o enunciado
 
