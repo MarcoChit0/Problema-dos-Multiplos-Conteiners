@@ -16,7 +16,7 @@ from statistics import *
 import time
 from numpy import *
 
-TIME_LIMIT = 18000  # 5 horas 
+TIME_LIMIT = 20  # 5 horas 
 NUM_INSTANCIAS = 2  # 2 execuções
 NUM_CONTEINERS = 10 # fixo -- de acordo com o enunciado
 
@@ -257,16 +257,25 @@ def write_file(melhores_individuos, file_name, valores_pares_itens, num_itens, v
     out_dir = "./heuristic/"
     out_pref = "out_heuristic_"
     file = open(out_dir + out_pref + file_name, "w")
+    medias = []
     for variacao in melhores_individuos:
         valores = [funcao_objetivo(ind, valores_itens=valores_itens, valores_pares_itens=valores_pares_itens, num_itens=num_itens, num_conteiners=NUM_CONTEINERS) for ind in melhores_individuos[variacao]]
         file.write("variação: "+str(variacao)+"\n")
         file.write("melhor valor: "+str(valores[0])+"\n")
         file.write("média: "+str(mean(valores))+"\n")
+        medias.append(mean(valores))
         file.write("mediana: "+str(median(valores))+"\n")
         file.write("moda: "+str(mode(valores))+"\n")
         file.write("desvio padrão: "+str(stdev(valores))+"\n")
         file.write("variância: "+str(pvariance(valores))+"\n")
         file.write("----------------------------------\n")
+    file.write("média das médias: " + str(mean(medias)) + "\n")
+    file.write("mediana das médias: "+str(median(medias))+"\n")
+    file.write("moda das médias: "+str(mode(medias))+"\n")
+    file.write("desvio padrão das médias: "+str(stdev(medias))+"\n")
+    file.write("variância das médias: "+str(pvariance(medias))+"\n")
+    sorted_medias = sorted(medias, reverse=True)
+    file.write("melhor valor das médias: "+str(sorted_medias[0])+"\n")
     file.close()    
  
 main()        
