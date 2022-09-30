@@ -16,8 +16,8 @@ from statistics import *
 import time
 from numpy import *
 
-TIME_LIMIT = 18000  # 5 horas 
-NUM_INSTANCIAS = 2  # 2 execuções
+TIME_LIMIT = 3600  # 1 hora por problema -> 5 horas execução 
+NUM_INSTANCIAS = 10  # 2 execuções
 NUM_CONTEINERS = 10 # fixo -- de acordo com o enunciado
 
 # ok
@@ -236,14 +236,18 @@ def read_file(file_name, num_conteiners=NUM_CONTEINERS):
 
 
 def main():
+    instancias= [8,9]
     variacoes = [1,2,3,4,5]
-    for n in range(NUM_INSTANCIAS):
+    for n in instancias:
         # recupera os dados dos arquivos de entrada
         file_name = "pcmcdc" + str(n+1) + ".txt"
+        print("---------------------")
+        print("Executando: " +file_name)
         itens, valores, pares, volumes, conteiners = read_file(file_name)
         # para cada uma das alterações no parâmetro: rodar a heuristica, salvar dados. Por fim, realizar a média.
         melhores_individuos = {}    # dicionário de listas.
         for variacao in variacoes:
+            print("variacao: "+ str(variacao))
             random.seed(seed=variacao)                      # [1, 2, ..., 5]
             num_solucoes_populacao_original = 50*variacao   # [50, 100,..., 250]
             num_participantes_torneio = 5*variacao          # [5, 10, ..., 25]
