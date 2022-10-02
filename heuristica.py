@@ -236,8 +236,8 @@ def read_file(file_name, num_conteiners=NUM_CONTEINERS):
 
 
 def main():
-    instancias= [8,9]
-    variacoes = [1,2,3,4,5]
+    instancias= [0,1,2,3,4,5,6,7,8,9]
+    variacoes = [6,7,8,9,10]
     for n in instancias:
         # recupera os dados dos arquivos de entrada
         file_name = "pcmcdc" + str(n+1) + ".txt"
@@ -259,7 +259,7 @@ def main():
 
 def write_file(melhores_individuos, file_name, valores_pares_itens, num_itens, valores_itens):
     out_dir = "./heuristic/"
-    out_pref = "out_heuristic_"
+    out_pref = "new_out_heuristic_"
     file = open(out_dir + out_pref + file_name, "w")
     medias = []
     for variacao in melhores_individuos:

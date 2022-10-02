@@ -1,0 +1,46 @@
+variação: 6
+melhor valor: 2015
+média: 1959.1866666666667
+mediana: 1959.0
+moda: 1959
+desvio padrão: 3.2331615074619044
+variância: 10.418488888888888
+----------------------------------
+variação: 7
+melhor valor: 2197
+média: 1949.1714285714286
+mediana: 1932.0
+moda: 1932
+desvio padrão: 47.8486065907998
+variância: 2282.947755102041
+----------------------------------
+variação: 8
+melhor valor: 2002
+média: 2002.0
+mediana: 2002.0
+moda: 2002
+desvio padrão: 0.0
+variância: 0
+----------------------------------
+variação: 9
+melhor valor: 2005
+média: 1941.4488888888889
+mediana: 1941.0
+moda: 1941
+desvio padrão: 4.759078639573956
+variância: 22.598498765432097
+----------------------------------
+variação: 10
+melhor valor: 2315
+média: 2118.488
+mediana: 2098.0
+moda: 2098
+desvio padrão: 53.7474411564097
+variância: 2883.009856
+----------------------------------
+média das médias: 1994.0589968253967
+mediana das médias: 1959.1866666666667
+moda das médias: 1959.1866666666667
+desvio padrão das médias: 73.39011005235919
+variância das médias: 4308.886602797915
+melhor valor das médias: 2118.488
