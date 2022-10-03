@@ -69,6 +69,9 @@ Código em python utilizado para plotar os gráficos com base nos dados obtidos 
 ### specs_pc.html ###
 Confirgurações do computador utilizado para rodar as instâncias da heurística.
 
+### apresentacao.pdf ###
+PDF de apresentação a ser utilizado em aula.
+
 ### read_me.md ### 
 Arquivo de auxílio.
 
