@@ -66,8 +66,11 @@ Código em python utilizado para rodar a heurística. Rodei a heurística uma ve
 ### plot_graph.py ###
 Código em python utilizado para plotar os gráficos com base nos dados obtidos em heuristica.py
 
-### specs_pc.html ###
+### h_specs_pc.html ###
 Confirgurações do computador utilizado para rodar as instâncias da heurística.
+
+### fm_specs_pc.html ###
+Confirgurações do computador utilizado para rodar as instâncias da formulação matemática.
 
 ### apresentacao.pdf ###
 PDF de apresentação a ser utilizado em aula.
