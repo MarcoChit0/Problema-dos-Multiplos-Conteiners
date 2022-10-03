@@ -107,6 +107,7 @@ def mutacao(solucao, num_conteiners, num_itens, pesos_itens, pesos_conteiners):
             elif(posso_atribuir(solucao, item_aleatorio, conteiner, num_itens, num_conteiners, pesos_itens, pesos_conteiners)):
                 solucao[conteiner][item_aleatorio] = 1
 
+# O (n* m²* (m + n))
 def busca_local(solucao, num_itens, num_conteiners, pesos_itens, pesos_conteiners):
     for item in range(num_itens):
         if not foi_selecionado(solucao, item, num_conteiners):
@@ -123,7 +124,7 @@ def foi_selecionado(solucao, item, num_conteiners):
     return False
 
 
-
+# O (num_solucoes_populacao_original * log(num_solucoes_populacao_original))
 def selecao(populacao_original, nova_populacao, valores_itens, valores_pares_itens, num_itens, num_conteiners, num_solucoes_populacao_original, alpha=0.1, beta=0.9):
     # alpha = orinal + nova
     pop_alpha = deepcopy(populacao_original) + deepcopy(nova_populacao)
@@ -136,7 +137,7 @@ def selecao(populacao_original, nova_populacao, valores_itens, valores_pares_ite
     
 
 
-# ok
+# O (m * n²)
 def funcao_objetivo(solucao, valores_itens, valores_pares_itens, num_itens, num_conteiners):
     soma_pares = 0
     for k in range(num_conteiners):
@@ -190,6 +191,7 @@ def heuristica(
     return melhores_individuos
 # print(heuristica(num_itens= 4,  num_conteiners=2, num_solucoes_populacao_original=5, pesos_conteiners=[3, 3], pesos_itens=[1,2,3,4], num_participantes_torneio= 2, valores_itens=[1,2,3,4],valores_pares_itens=[[0,4,1,1],[4,0,1,1],[1,1,0,1],[1,1,1,0]]))
 
+# O(file_size + n²)
 def read_file(file_name, num_conteiners=NUM_CONTEINERS):
     """
         Objetivo: ler o arquivo de instâncias e salvar os dados do problema.
@@ -237,10 +239,10 @@ def read_file(file_name, num_conteiners=NUM_CONTEINERS):
     volume_conteiners = [floor((0.8/num_conteiners) * sum(volume_itens)) for k in range(num_conteiners)]
     return itens, valor_itens, valor_par_itens, volume_itens, volume_conteiners
 
-
+# para cada instância do problema, roda a instância |variações| vezes por 1 hora.
 def main():
     instancias= [0,1,2,3,4,5,6,7,8,9]
-    variacoes = [6,7,8,9,10]
+    variacoes = [1,2,3,4,5,6,7,8,9,10]
     for n in instancias:
         # recupera os dados dos arquivos de entrada
         file_name = "pcmcdc" + str(n+1) + ".txt"
@@ -259,10 +261,10 @@ def main():
             melhores_individuos[variacao] = mais_bem_adaptados
         write_file(melhores_individuos=melhores_individuos, file_name=file_name, valores_pares_itens=pares, num_itens=itens, valores_itens=valores)
 
-
+# O (|melhores_individuos|)
 def write_file(melhores_individuos, file_name, valores_pares_itens, num_itens, valores_itens):
     out_dir = "./heuristic/"
-    out_pref = "new_out_heuristic_"
+    out_pref = "out_heuristic_"
     file = open(out_dir + out_pref + file_name, "w")
     medias = []
     for variacao in melhores_individuos:

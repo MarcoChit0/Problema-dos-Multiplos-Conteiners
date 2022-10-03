@@ -64,13 +64,13 @@ Imagem da formulação matemática do problema.
 Código em python utilizado para rodar a heurística. Rodei a heurística uma vez para cada instância do problema, onde o código foi executado 10 vezes, alterando o tamanho da população original. Depois, os resultados foram armazenados em heuristic
 
 ### plot_graph.py ###
-Código em python utilizado para plotar os gráficos com base nos dados obtidos em heuristica.py
+Código em python utilizado para plotar os gráficos com base nos dados obtidos em heuristica.py.
 
 ### h_specs_pc.html ###
-Confirgurações do computador utilizado para rodar as instâncias da heurística.
+Confirgurações do computador utilizado para rodar as instâncias da heurística, utilizando Ubuntu 20.04.
 
 ### fm_specs_pc.html ###
-Confirgurações do computador utilizado para rodar as instâncias da formulação matemática.
+Confirgurações do computador utilizado para rodar as instâncias da formulação matemática, utilizando Ubuntu 20.04.
 
 ### apresentacao.pdf ###
 PDF de apresentação a ser utilizado em aula.

@@ -8,6 +8,7 @@ import numpy as np
 num_instancias = 10
 num_conteiners = 10 #fixo -- de acordo com o enunciado
 
+# roda até o tempo de exeução acabar para cada instâcnia do problema.
 def main():
     for n in range(num_instancias):
         # recupera os dados dos arquivos de entrada
@@ -16,6 +17,7 @@ def main():
         # monta e executa o programa inteiro
         mult_conteiners(itens, volumes, valores, pares, conteiners, file_name)
 
+# roda até o tempo de exeução acabar.
 def mult_conteiners(num_itens, volumes, valores_itens, valores_pares, conteiners, file_name): 
     """
         Objetivo: monta e executa o programa inteiro.
@@ -92,7 +94,7 @@ def mult_conteiners(num_itens, volumes, valores_itens, valores_pares, conteiners
     model.writeLP(form_pref + file_name)
 
 
-
+# O(file_size + n²)
 def read_file(file_name):
     """
         Objetivo: ler o arquivo de instâncias e salvar os dados do problema.
