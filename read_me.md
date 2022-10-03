@@ -45,6 +45,12 @@ Instâncias do problema.
 ### out ### 
 Resultado dos experimentos. Valores das variáveis e da função objetivo.
 
+### heuristic ###
+Resultados das execuções da heurística.
+
+### graphs_data ###
+Imagens dos gráficos dos melhores valores e dos valores das médias ao rodar a heurística.
+
 ### form ### 
 Formulação matemática esecífica de cada uma das instâncias.
 
@@ -54,8 +60,17 @@ Código em pyhton utilizando pulp como "FrontEnd" e CPLEX como "BackEnd".
 ### formulacao_matematica.jpeg ###
 Imagem da formulação matemática do problema.
 
+### heuristica.py ###
+Código em python utilizado para rodar a heurística. Rodei a heurística uma vez para cada instância do problema, onde o código foi executado 10 vezes, alterando o tamanho da população original. Depois, os resultados foram armazenados em heuristic
+
+### plot_graph.py ###
+Código em python utilizado para plotar os gráficos com base nos dados obtidos em heuristica.py
+
+### specs_pc.html ###
+Confirgurações do computador utilizado para rodar as instâncias da heurística.
+
 ### read_me.md ### 
 Arquivo de auxílio.
 
 ### resultados.txt ###
-Arquivo comparando o resultado encontrado com o melhor valor conhecido para cada instância.
+Arquivo comparando o resultado encontrado da formulação matemática com o melhor valor conhecido para cada instância.

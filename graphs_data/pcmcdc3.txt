@@ -1,0 +1,80 @@
+variação: 1
+melhor valor: 2353
+média: 2302.04
+mediana: 2301.0
+moda: 2301
+desvio padrão: 7.353910524340094
+variância: 52.998400000000004
+----------------------------------
+variação: 2
+melhor valor: 2390
+média: 2205.14
+mediana: 2191.0
+moda: 2191
+desvio padrão: 40.9735120153092
+variância: 1662.0403999999999
+----------------------------------
+variação: 3
+melhor valor: 2348
+média: 2348.0
+mediana: 2348.0
+moda: 2348
+desvio padrão: 0.0
+variância: 0
+----------------------------------
+variação: 4
+melhor valor: 2475
+média: 2221.76
+mediana: 2203.0
+moda: 2203
+desvio padrão: 57.66340033932674
+variância: 3308.4424
+----------------------------------
+variação: 5
+melhor valor: 2178
+média: 2178.0
+mediana: 2178.0
+moda: 2178
+desvio padrão: 0.0
+variância: 0
+----------------------------------
+variação: 6
+melhor valor: 2388
+média: 2384.0133333333333
+mediana: 2384.0
+moda: 2384
+desvio padrão: 0.2309401076758503
+variância: 0.05315555555555555
+----------------------------------
+variação: 7
+melhor valor: 2369
+média: 2218.2742857142857
+mediana: 2215.0
+moda: 2215
+desvio padrão: 18.199441769472646
+variância: 330.2733387755102
+----------------------------------
+variação: 8
+melhor valor: 2375
+média: 2272.9125
+mediana: 2271.0
+moda: 2271
+desvio padrão: 13.017622285768525
+variância: 169.03484375
+----------------------------------
+variação: 9
+melhor valor: 3030
+média: 2659.202222222222
+mediana: 2626.0
+moda: 2626
+desvio padrão: 93.3546128303194
+variância: 8695.716883950618
+----------------------------------
+variação: 10
+melhor valor: 2454
+média: 2265.358
+mediana: 2262.0
+moda: 2262
+desvio padrão: 19.640604437882526
+variância: 384.981836
+----------------------------------
