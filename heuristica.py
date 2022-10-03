@@ -20,14 +20,14 @@ TIME_LIMIT = 3600  # 1 hora por problema -> 5 horas execução
 NUM_INSTANCIAS = 10  # 2 execuções
 NUM_CONTEINERS = 10 # fixo -- de acordo com o enunciado
 
-# ok
+# O(m*n*(m+n)*num_solucoes)
 def gera_solucoes(num_itens, num_conteiners, num_solucoes, pesos_conteiners, pesos_itens):
     solucoes = []
     while len(solucoes) < num_solucoes:
         solucoes.append(atribui_itens_aleatoriamente(num_itens, num_conteiners, pesos_conteiners, pesos_itens))
     return solucoes
 
-
+# O(m*n*(m+n))
 def atribui_itens_aleatoriamente(num_itens, num_conteiners, pesos_conteiners, pesos_itens):
     atribuicao_itens = [[0 for i in range(num_itens)] for k in range(num_conteiners)]
     for conteiner in range(num_conteiners):
@@ -36,7 +36,7 @@ def atribui_itens_aleatoriamente(num_itens, num_conteiners, pesos_conteiners, pe
                 atribuicao_itens[conteiner][item] = 1
     return atribuicao_itens
 
-
+# O (m + n)
 def posso_atribuir(atribuicao, item, conteiner, num_itens, num_conteiners, pesos_itens, pesos_conteiners):
     sum = 0
     # verifica se eu já selecionei o item
@@ -55,9 +55,11 @@ def posso_atribuir(atribuicao, item, conteiner, num_itens, num_conteiners, pesos
     else:
         return False
 
+# O(1)
 def criterio_parada_satisfeito(time_start, time_duration):
     return not (time.time() < time_start + time_duration)
 
+# O(num_participantes_torneio* log(num_participantes_torneio))
 def torneio(solucoes, num_participantes_torneio, valores_itens, valores_pares_itens, num_itens, num_conteiners):
     indice_solucoes_participantes = random.choice(len(solucoes), size=num_participantes_torneio)
     participantes = []
@@ -66,12 +68,14 @@ def torneio(solucoes, num_participantes_torneio, valores_itens, valores_pares_it
     melhores_participantes = sorted(participantes, key=lambda p:funcao_objetivo(p, valores_itens, valores_pares_itens, num_itens, num_conteiners))
     return melhores_participantes
 
+# O(num_particao)
 def recombinacao(solucao_01, solucao_02, num_particao=1):
     for part in range(num_particao):
         # Troca um conteiner inteiro entre duas soluções.
         # Evita, assim, ficar recalculando o peso para ver se passou ou não do peso máximo do conteiner.
         swap(solucao_01, solucao_02, part)
 
+# O(m*n)
 def atualiza_variaveis(solucao, posic):
     novas_variaveis = []
     count = 0
@@ -87,13 +91,13 @@ def atualiza_variaveis(solucao, posic):
                 cont[var_index] = 0
         cont_posic +=1
 
-
+# O(1)
 def swap(lista01, lista02, posic):
     lista01[posic], lista02[posic] = lista02[posic], lista01[posic]
     atualiza_variaveis(lista01, posic)
     atualiza_variaveis(lista02, posic)
 
-
+# O(m*(m+n))
 def mutacao(solucao, num_conteiners, num_itens, pesos_itens, pesos_conteiners):
     for conteiner in range(num_conteiners):
         if random.choice([0,1], size=1)[0] == 1:
@@ -103,8 +107,6 @@ def mutacao(solucao, num_conteiners, num_itens, pesos_itens, pesos_conteiners):
             elif(posso_atribuir(solucao, item_aleatorio, conteiner, num_itens, num_conteiners, pesos_itens, pesos_conteiners)):
                 solucao[conteiner][item_aleatorio] = 1
 
-
-
 def busca_local(solucao, num_itens, num_conteiners, pesos_itens, pesos_conteiners):
     for item in range(num_itens):
         if not foi_selecionado(solucao, item, num_conteiners):
@@ -113,6 +115,7 @@ def busca_local(solucao, num_itens, num_conteiners, pesos_itens, pesos_conteiner
                     solucao[conteiner][item] = 1
                     break
 
+# O (m)
 def foi_selecionado(solucao, item, num_conteiners):
     for conteiner in range(num_conteiners):
             if solucao[conteiner][item] == 1:

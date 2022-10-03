@@ -75,6 +75,9 @@ Confirgurações do computador utilizado para rodar as instâncias da formulaç�
 ### apresentacao.pdf ###
 PDF de apresentação a ser utilizado em aula.
 
+### INF05010 Otimização Combinatória ###
+PDF de relatório, contando a minha implementação da heurística e os resultados obtidos.
+
 ### read_me.md ### 
 Arquivo de auxílio.
 
